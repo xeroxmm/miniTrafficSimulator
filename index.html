@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="de">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Lfz-Simu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <!--<script type="text/javascript" src="node_DeIce.js"></script>-->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="interface.js"></script>
+  </head>
+  <body>
+  	<div id="container">
+		<div id="theCanvasBox">
+			<canvas id="canvasNode" class="fullSize"> </canvas>
+			<canvas id="canvasEdge" class="fullSize"> </canvas>
+			<canvas id="canvasRoute" class="fullSize"> </canvas>
+			<div id="clickableObj" class="fullSize"> </div>
+			<div id="divPlanes" class="fullSize"> </div>
+		</div>
+  		<div id="infoContainer">
+  			<div id="allNodes" style="display:none">
+  			
+  			</div>
+  			<div class="infoContainerSub" id="SimStatus">
+  				<h3>Simulation</h3>
+  				<div id="theTime">
+  					<p>00:00:00</p>
+  				</div>
+  				<div id="szeanrio">
+  					<select id="szenarioSelect" name="szenarioSelect">
+  						<option selected>nodes</option>
+  						<option>nodes_2</option>
+  						<option>nodes_BigGate</option>
+  						<option>node_DeIce</option>
+  					</select>
+  				</div>
+  				<div id="startButton">Start</div>
+  				<div id="theTimeControl" class="bottom">
+  					<div id="timeControlDiv">
+  						<div id="pauseButton" data-status="1" data-speed="0.5">
+  							<div class="rectL rectPB"> </div>
+  							<div class="rectR rectPB"> </div>
+  						</div><p><label>Speed<input type="range" name="speed" id="speedRuler" min="0.05" max="2" step="0.0005" value="1.4995"/></label>(<span>1s = 0.5000s</span>)</p>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="infoContainerSub" id="PlaneStatus">
+  				<h3>Plane</h3>
+  				<div id="planeName">Name: <span> </span></div>
+  				<div id="planeStatus">Status: <span> </span></div>
+  				<div id="planeSpeed">Speed: <span> </span></div>
+  				<div id="planeHeading">Heading: <span>  </span></div>
+  				<div id="planeType">Type: <span> </span></div>
+  				<div id="planeRoute">Route to destination: <span> </span></div>
+  				<div id="planeRoute2">Route from start: <span> </span></div>
+  			</div>
+  			<div class="infoContainerSub" id="SurfaceStatus">
+  				<h3>Surface</h3>
+  				<div id="sText">
+  					<div id="surfName">Name: <span> </span></div>
+  					<div id="sittingOn">Status: <span> </span></div>
+  				</div>
+  				<div class="bottom">
+  					<label><input type="checkbox" name="showStoppPoints" id="showStoppPoints"/>StoppPoints</label>
+  					<label><input type="checkbox" name="showTriggerPoints" id="showTriggerPoints"/>GateSegmente</label>
+  					<label><input type="checkbox" name="showTriggerPoints" id="showTriggerSpeedLimit"/>SpeedLimit</label>
+  					<label><input type="checkbox" name="showRoutes" id="showRoutes" checked/>Routes</label>
+  				</div>
+  			</div> 			
+  		</div>
+  	</div>
+  	<script type="text/javascript" src="interface.js"></script>
+  </body>
+</html>

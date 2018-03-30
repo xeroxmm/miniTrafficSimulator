@@ -1,0 +1,159 @@
+body, html { 
+	min-height: 100%;
+	height: 100%;
+	font-family:"Arial";
+}
+
+body, html, div {
+	margin: 0;
+	padding: 0;
+}
+
+canvas {
+	position: absolute;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 12pt;
+}
+label, #timeControlDiv p {
+	font-size: 10pt;
+	color: #888;
+}
+input {
+	vertical-align: middle;
+}
+ul {
+	list-style-type: none;
+    padding-left: 10px;
+    margin: 0px;
+}
+li {
+	font-size: 10px;
+	color: #444;
+}
+.bold{
+	font-weight: bold;
+}
+.italic {
+	font-style:italic;
+}
+#container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #DDD;
+}
+#theCanvasBox{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 30px;
+	border: 1px solid #444;
+}
+#infoContainer{
+	background-color: #FFF;
+	display: block;
+	z-index: 1;
+	position: absolute;
+	
+	top: 10px;
+	bottom: 10px;
+	right: 10px;
+}
+
+#infoView {
+	width: 300px;
+}
+
+#SimStatus {
+	height: 200px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+#PlaneStatus {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+#SurfaceStatus {
+	padding: 5px;
+}
+#startButton{
+	border: 1px solid #444;
+	padding: 5px;
+	cursor: pointer;
+	margin: 10px 0px 10px 0px;
+	font-weight: bold;
+	color: #FFF;
+	background-color:#999;
+	text-align:center;
+}
+#theTimeControl input{
+	width: 55%;
+	margin: 0 10px 0 10px;
+}
+#timeControlDiv {
+	text-align: center;
+}
+#allNodes {
+	position: absolute;
+	bottom: 0;
+	top: 200px;
+	width: 100%;
+	background-color: #FFF;
+	z-index: 1;
+	border: 1px solid #444;
+	overflow-y: scroll;
+}
+#pauseButton {
+	float: left;
+	height: 20px;
+	border: 1px solid #888;
+	width: 20px;
+	margin-right: 5px;
+}
+.rectPB {
+	width: 4px;
+	height: 12px;
+	margin-top: 4px;
+	background-color: #999;
+}
+#pauseButton:hover .rectPB {
+	background-color: #444;
+}
+.rectL {
+	margin-left: 5px;
+	float: left; 
+}
+.rectR {
+	margin-right: 5px;
+	float: right; 
+}
+.fullSize{
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.airplane, .clickableObj{
+	position: absolute;
+}
+.infoContainerSub {
+	border: 1px solid #444;
+	clear: both;
+	position: relative;
+}
+.bottom {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	right: 10px;
+}
